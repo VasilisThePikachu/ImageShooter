@@ -43,6 +43,7 @@ while running:
         # If the window is resized resize the image and window
         if event.type == pygame.VIDEORESIZE:
             screen.fill((255, 255, 255))
+            idiot = pygame.image.load(file)
             idiot = pygame.transform.scale(idiot, (event.w, event.h))
             screen.blit(idiot, (10, 10))
             pygame.display.flip()
