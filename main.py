@@ -16,6 +16,8 @@ gunshot = pygame.mixer.Sound('gunshot.mp3')
 # Draw an idiot
 idiot = pygame.image.load(file)
 screen = pygame.display.set_mode(idiot.get_rect().size, pygame.RESIZABLE)
+# If your image is so big it that you can't resize this comment the above line and uncomment this
+#screen = pygame.display.set_mode([500, 500], pygame.RESIZABLE)
 screen.fill((255, 255, 255))
 screen.blit(idiot, (10, 10))
 pygame.display.flip()
